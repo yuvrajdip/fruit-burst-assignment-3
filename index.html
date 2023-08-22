@@ -17,33 +17,44 @@
 
 <body>
 
-  <header>
+  <header class="w-11/12 mx-auto mt-7">
     <!-- navbar -->
-    <div class="navbar bg-base-100 bg-red-500 rounded-full mt-7 w-11/12 mx-auto">
+
+    <!-- navbar for mobile and tablets -->
+
+    <div class="flex justify-around lg:hidden">
+      <div class="flex items-center gap-3">
+        <img src="./images/logo.png" class="w-[30px] h-[30px]" alt="" srcset="">
+        <a class="text-3xl text-black font-semibold">Fruit-Burst</a>
+      </div>
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <!-- navbar for laptops and larger devices -->
+    <div class="navbar hidden sm:hidden md:hidden lg:inline-flex navbar bg-base-100 bg-red-500 rounded-full">
       <div class="navbar-start">
-        <div class="flex gap-6 px-5 sm:hidden md:inline-flex text-white cursor-pointer">
+        <div class="flex gap-6 px-5 text-white cursor-pointer">
           <p>Home</p>
           <p>About Us</p>
           <p>Shop</p>
           <p>All Fruits</p>
-        </div>
-        <div class="dropdown lg:hidden">
-          <label tabindex="0" class="btn btn-ghost btn-circle">
-            <i class="fa-solid fa-bars fa-lg" style="color: #000000;"></i>
-          </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Home</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Shop</a></li>
-            <li><a>All Fruits</a></li>
-          </ul>
         </div>
       </div>
       <div class="navbar-center">
         <div class="flex items-center gap-3">
           <img src="./images/logo.png" alt="" srcset="">
           <a class="text-3xl text-white">Fruit-Burst</a>
-
         </div>
       </div>
       <div class="navbar-end">
@@ -58,6 +69,8 @@
       </div>
     </div>
   </header>
+
+
 </body>
 
 </html>
