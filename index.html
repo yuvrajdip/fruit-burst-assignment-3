@@ -15,10 +15,11 @@
 
 </head>
 
-<body>
+<body class="w-11/12 mx-auto">
 
-  <header class="w-11/12 mx-auto mt-7">
-    <!-- navbar -->
+  <header class="mt-7">
+
+    <!--***** navbar starts -->
 
     <!-- navbar for mobile and tablets -->
 
@@ -31,16 +32,19 @@
         <label tabindex="0" class="btn btn-ghost btn-circle">
           <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
         </label>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-auto">
           <li><a>Home</a></li>
+          <hr>
           <li><a>About Us</a></li>
+          <hr>
           <li><a>Shop</a></li>
+          <hr>
           <li><a>All Fruits</a></li>
         </ul>
       </div>
     </div>
 
-    
+
     <!-- navbar for laptops and larger devices -->
     <div class="navbar hidden sm:hidden md:hidden lg:inline-flex navbar bg-base-100 bg-red-500 rounded-full">
       <div class="navbar-start">
@@ -60,7 +64,7 @@
       <div class="navbar-end">
         <div class="form-control">
           <div class="input-group pr-10">
-            <input type="text" placeholder="Search…" class="input"/>
+            <input type="text" placeholder="Search…" class="input" />
             <button class="btn btn-square">
               <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
             </button>
@@ -68,9 +72,31 @@
         </div>
       </div>
     </div>
+
+    <!--***** navbar ends -->
   </header>
 
 
+  <main class="">
+
+    <!-- **** banner starts -->
+    <div class="mt-7 mb-28 w-full banner relative rounded-lg h-[500px] flex justify-center items-center" style="background-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
+      url('images/banner4.png');">
+      <div class="text-center">
+        <h3 class="text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
+        <p class="mt-8 text-base text-white">We supply highly quality organic products</p>
+        <button class="mt-8 btn py-4 px-7 border-0 bg-[#F85559] text-white">Shop Now</button>
+      </div>
+
+      <div class="hidden md:hidden lg:flex lg:absolute top-[82%] justify-evenly items-center w-[1000px] h-[170px] rounded-lg bg-slate-100 drop-shadow-xl">
+        <img class="w-[120px] h-[120px]" src="./images/fruit1.png" alt="">
+        <img class="w-[120px] h-[120px]" src="./images/fruit2.png" alt="">
+        <img class="w-[120px] h-[120px]" src="./images/fruit3.png" alt="">
+        <img class="w-[120px] h-[120px]" src="./images/fruit4.png" alt="">
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
