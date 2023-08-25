@@ -80,23 +80,66 @@
   <main class="">
 
     <!-- **** banner starts -->
-    <div class="mt-7 lg:mb-28 w-full banner relative rounded-lg h-[500px] flex justify-center items-center" style="background-image:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
-      url('images/banner4.png');">
-      <div class="text-center">
-        <h3 class="text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
-        <p class="mt-8 text-base text-white">We supply highly quality organic products</p>
-        <button class="mt-8 btn py-4 px-7 border-0 bg-[#F85559] text-white">Shop Now</button>
+    <div class="carousel w-full mt-9">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="/images/banner1.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <div class="text-center">
+            <h3 class="text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
+            <p class="mt-8 text-base text-white">We supply highly quality organic products</p>
+            <button class="mt-8 btn py-4 px-7 border-0 bg-[#F85559] text-white">Shop Now</button>
+          </div>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="/images/banner2.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <div class="text-center">
+            <h3 class="text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
+            <p class="mt-8 text-base text-white">We supply highly quality organic products</p>
+            <button class="mt-8 btn py-4 px-7 border-0 bg-[#F85559] text-white">Shop Now</button>
+          </div>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="/images/banner3.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <div class="text-center">
+            <h3 class="text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
+            <p class="mt-8 text-base text-white">We supply highly quality organic products</p>
+            <button class="mt-8 btn py-4 px-7 border-0 bg-[#F85559] text-white">Shop Now</button>
+          </div>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="/images/banner4.png" class="w-full" />
+        <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <div class="text-center">
+            <h3 class="text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
+            <p class="mt-8 text-base text-white">We supply highly quality organic products</p>
+            <button class="mt-8 btn py-4 px-7 border-0 bg-[#F85559] text-white">Shop Now</button>
+          </div>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
       </div>
 
       <div
-        class="hidden md:hidden lg:flex lg:absolute top-[82%] justify-evenly items-center w-[1000px] h-[170px] rounded-lg bg-slate-100 drop-shadow-xl">
+        class="hidden md:hidden lg:flex lg:absolute left-[13%] top-[83%] justify-evenly items-center w-[1000px] h-[170px] rounded-lg bg-slate-100 drop-shadow-xl">
         <img class="w-[120px] h-[120px]" src="./images/fruit1.png" alt="">
         <img class="w-[120px] h-[120px]" src="./images/fruit2.png" alt="">
         <img class="w-[120px] h-[120px]" src="./images/fruit3.png" alt="">
         <img class="w-[120px] h-[120px]" src="./images/fruit4.png" alt="">
       </div>
     </div>
+
+
     <!-- ***** banner ends -->
 
 
@@ -372,6 +415,54 @@
         </div>
       </div>
     </div>
+
+    <!-- *** meet the team section ends -->
+
+
+    <!-- ***** Why Choose Us section starts-->
+    <section class="why-choose-us">
+      <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-center mb-7">Why Choose Us</h2>
+      <p class="text-sm font-medium text-center">Contrary to popular belief, is not simply random text. It has roots
+        in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+
+      <!-- container -->
+      <div class="flex">
+        <div class="flex w-[65%]">
+          <div class="left w-[50%] bg-black h-auto">
+            <div class="card1 flex">
+              <div>
+
+              </div>
+              <div>
+                <h3>Dedicated Team</h3>
+                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+            <div class="card2 flex">
+              <div>
+
+              </div>
+              <div>
+                <h3>Dedicated Team</h3>
+                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+            <div class="card3 flex">
+              <div>
+
+              </div>
+              <div>
+                <h3>Dedicated Team</h3>
+                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+          </div>
+          <div class="middle w-[50%] bg-yellow-400 h-auto">hoga</div>
+        </div>
+        <div class="right bg-orange-600 h-auto"></div>
+      </div>
+    </section>
   </main>
 </body>
 
