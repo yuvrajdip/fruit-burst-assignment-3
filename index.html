@@ -62,14 +62,32 @@
         </div>
       </div>
       <div class="navbar-end">
-        <div class="form-control">
-          <div class="input-group pr-10">
+        <!-- <div class="form-control">
+          <div class="input-group pr-10" style="border: 0;border-radius: 50%;">
             <input type="text" placeholder="Search…" class="input" />
             <button class="btn btn-square">
               <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
             </button>
           </div>
-        </div>
+        </div> -->
+
+        <!-- input search -->
+        <form>
+          <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input type="search" id="search"
+              class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full"
+              placeholder="Search" required>
+          </div>
+        </form>
+
       </div>
     </div>
 
@@ -88,7 +106,8 @@
           <div class="text-center">
             <h3 class="text-xl md:text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
             <p class="md:mt-8 text-sm text-white">We supply highly quality organic products</p>
-            <button class="mt-1 md:mt-8 btn py-1 lg:py-4 px-2 lg:px-7 border-0 bg-[#F85559] text-white text-sm">Shop Now</button>
+            <button class="mt-1 md:mt-8 btn py-1 lg:py-4 px-2 lg:px-7 border-0 bg-[#F85559] text-white text-sm">Shop
+              Now</button>
           </div>
           <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
@@ -100,7 +119,8 @@
           <div class="text-center">
             <h3 class="text-xl md:text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
             <p class="md:mt-8 text-sm text-white">We supply highly quality organic products</p>
-            <button class="mt-1 md:mt-8 btn py-1 lg:py-4 px-2 lg:px-7 border-0 bg-[#F85559] text-white text-sm">Shop Now</button>
+            <button class="mt-1 md:mt-8 btn py-1 lg:py-4 px-2 lg:px-7 border-0 bg-[#F85559] text-white text-sm">Shop
+              Now</button>
           </div>
           <a href="#slide3" class="btn btn-circle">❯</a>
         </div>
@@ -112,7 +132,8 @@
           <div class="text-center">
             <h3 class="text-xl md:text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
             <p class="md:mt-8 text-sm text-white">We supply highly quality organic products</p>
-            <button class="mt-1 md:mt-8 btn py-1 lg:py-4 px-2 lg:px-7 border-0 bg-[#F85559] text-white text-sm">Shop Now</button>
+            <button class="mt-1 md:mt-8 btn py-1 lg:py-4 px-2 lg:px-7 border-0 bg-[#F85559] text-white text-sm">Shop
+              Now</button>
           </div>
           <a href="#slide4" class="btn btn-circle">❯</a>
         </div>
@@ -124,7 +145,8 @@
           <div class="text-center">
             <h3 class="text-xl md:text-6xl text-white font-bold">Exotic tastes at your doorstep</h3>
             <p class="md:mt-8 text-sm text-white">We supply highly quality organic products</p>
-            <button class="mt-1 md:mt-8 btn py-1 lg:py-4 px-2 lg:px-7 border-0 bg-[#F85559] text-white text-sm">Shop Now</button>
+            <button class="mt-1 md:mt-8 btn py-1 lg:py-4 px-2 lg:px-7 border-0 bg-[#F85559] text-white text-sm">Shop
+              Now</button>
           </div>
           <a href="#slide1" class="btn btn-circle">❯</a>
         </div>
@@ -178,171 +200,178 @@
 
 
     <!--* 2nd deal of the day part -->
-    <div
-      class="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-4 justify-evenly items-center my-10">
+    <div class=" my-10">
+      <div
+        class="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-4 justify-evenly items-center">
 
-      <!--* 1st card -->
-      <div class="card w-full bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title p-2 border-b-2">12.90$ - 18.95$</h2>
-          <hr class="bg-black font-medium">
-          <p class="mt-3">Red Dragon</p>
-          <div class="mt-3 flex justify-evenly items-center">
-            <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-            <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+        <!--* 1st card -->
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title p-2 border-b-2">12.90$ - 18.95$</h2>
+            <hr class="bg-black font-medium">
+            <p class="mt-3">Red Dragon</p>
+            <div class="mt-3 flex justify-evenly items-center">
+              <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+              <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn mt-5" onclick="my_modal_1.showModal()">Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure class="px-10 pt-10">
+                  <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <p class="my-6">Red Dragon</p>
+                <div class="my-6 flex justify-evenly items-center">
+                  <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                </div>
+                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </div>
+              </form>
+            </dialog>
+
           </div>
-          <!-- Open the modal using ID.showModal() method -->
-          <button class="btn mt-5" onclick="my_modal_1.showModal()">Details</button>
-          <dialog id="my_modal_1" class="modal">
-            <form method="dialog" class="modal-box">
-              <figure class="px-10 pt-10">
-                <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
-              </figure>
-              <p class="my-6">Red Dragon</p>
-              <div class="my-6 flex justify-evenly items-center">
-                <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-                <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-              </div>
-              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
-              </div>
-            </form>
-          </dialog>
+        </div>
 
+        <!--* 2nd card -->
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="mt-3">Banana</p>
+            <div class="mt-3 flex justify-evenly items-center">
+              <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+              <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn mt-5" onclick="my_modal_2.showModal()">Details</button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure class="px-10 pt-10">
+                  <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <p class="my-6">Banana</p>
+                <div class="my-6 flex justify-evenly items-center">
+                  <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                </div>
+                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </div>
+              </form>
+            </dialog>
+
+          </div>
+        </div>
+        <!--* 3rd card -->
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="mt-3">Apple</p>
+            <div class="mt-3 flex justify-evenly items-center">
+              <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+              <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn mt-5" onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure class="px-10 pt-10">
+                  <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <p class="my-6">Apple</p>
+                <div class="my-6 flex justify-evenly items-center">
+                  <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                </div>
+                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+        <!-- 4rth card -->
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
+
+            <p class="mt-3">Orange</p>
+            <div class="mt-3 flex justify-evenly items-center">
+              <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+              <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+              <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn mt-5" onclick="my_modal_4.showModal()">Details</button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure class="px-10 pt-10">
+                  <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <p class="my-6">Orange</p>
+                <div class="my-6 flex justify-evenly items-center">
+                  <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
+                </div>
+                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
         </div>
       </div>
-
-      <!--* 2nd card -->
-      <div class="card w-full bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
-          <hr>
-          <p class="mt-3">Banana</p>
-          <div class="mt-3 flex justify-evenly items-center">
-            <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-            <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-          </div>
-          <!-- Open the modal using ID.showModal() method -->
-          <button class="btn mt-5" onclick="my_modal_2.showModal()">Details</button>
-          <dialog id="my_modal_2" class="modal">
-            <form method="dialog" class="modal-box">
-              <figure class="px-10 pt-10">
-                <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
-              </figure>
-              <p class="my-6">Banana</p>
-              <div class="my-6 flex justify-evenly items-center">
-                <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-                <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-              </div>
-              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
-              </div>
-            </form>
-          </dialog>
-
-        </div>
-      </div>
-      <!--* 3rd card -->
-      <div class="card w-full bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
-          <hr>
-          <p class="mt-3">Apple</p>
-          <div class="mt-3 flex justify-evenly items-center">
-            <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-            <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-          </div>
-          <!-- Open the modal using ID.showModal() method -->
-          <button class="btn mt-5" onclick="my_modal_3.showModal()">Details</button>
-          <dialog id="my_modal_3" class="modal">
-            <form method="dialog" class="modal-box">
-              <figure class="px-10 pt-10">
-                <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
-              </figure>
-              <p class="my-6">Apple</p>
-              <div class="my-6 flex justify-evenly items-center">
-                <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-                <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-              </div>
-              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
-              </div>
-            </form>
-          </dialog>
-        </div>
-      </div>
-      <!-- 4rth card -->
-      <div class="card w-full bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
-
-          <p class="mt-3">Orange</p>
-          <div class="mt-3 flex justify-evenly items-center">
-            <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-            <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-            <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-          </div>
-          <!-- Open the modal using ID.showModal() method -->
-          <button class="btn mt-5" onclick="my_modal_4.showModal()">Details</button>
-          <dialog id="my_modal_4" class="modal">
-            <form method="dialog" class="modal-box">
-              <figure class="px-10 pt-10">
-                <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
-              </figure>
-              <p class="my-6">Orange</p>
-              <div class="my-6 flex justify-evenly items-center">
-                <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-                <i class="fa-solid fa-star fa-xl" style="color: #ea2e2e;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-                <i class="fa-regular fa-star fa-xl" style="color: #ee4444;"></i>
-              </div>
-              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
-              </div>
-            </form>
-          </dialog>
-        </div>
+      <div class="text-center my-4">
+        <button
+          class="mt-1 md:mt-8 btn py-1 lg:py-4 px-2 lg:px-7 border-0 bg-[#F85559] text-white text-sm text-center">Show
+          All</button>
       </div>
     </div>
 
